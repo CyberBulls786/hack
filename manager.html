@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        display: flex;
+        align-items: center;
+        background-color: #3473d1;
+        padding: 20px;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+      }
+
+      .logo img {
+        height: 100px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      nav ul li {
+        flex: 1;
+      }
+
+      nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      .footer {
+        background-color: #1c5ec7;
+        color: white;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .social-links {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+      }
+
+      .social-links li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      .social-links a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .social-links a:hover {
+        text-decoration: underline;
+      }
+
+      .form{
+        display: flex;
+        
+      }
+
+      table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .cont{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#home"
+          ><img
+            src="https://firebasestorage.googleapis.com/v0/b/hack-aaf68.appspot.com/o/Web_Photo_Editor-removebg-preview.png?alt=media&token=a8aa1779-2c2c-4cc7-86b4-736745cff310"
+            alt="Logo"
+        /></a>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="task">
+      <div class="cont">
+      <div class="text">
+        <h1>ADD YOUR CREDENTIALS</h1>
+      </div>
+
+      <div class="form">
+        <form action="#" method="post">
+          <label for="username">Platform:</label>
+          <input
+            type="text"
+            id="Platform"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="username">Username/email:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <input type="submit" value="SAVE" />
+        </form>
+      </div>
+        <div class="table"> <table>
+          <thead>
+              <tr>
+                  <th>PLATEFORM</th>
+                  <th>USERNAME/EMAIL</th>
+                  <th>PASSWORD</th>
+                  <th>EDIT/DELETE</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Row 1, Cell 1</td>
+                  <td>Row 1, Cell 2</td>
+                  <td>Row 1, Cell 3</td>
+                  <td><button>EDIT</button> <button>DELETE</button></td>
+              </tr>
+              <tr>
+                  <td>Row 2, Cell 1</td>
+                  <td>Row 2, Cell 2</td>
+                  <td>Row 2, Cell 3</td>
+                  <td><button>EDIT</button> <button>DELETE</button></td>
+              </tr>
+              <tr>
+                  <td>Row 3, Cell 1</td>
+                  <td>Row 3, Cell 2</td>
+                  <td>Row 3, Cell 3</td>
+                  <td><button>EDIT</button> <button>DELETE</button></td>
+              </tr></div>
+      
+    </div>
+  </section>
+  </body>
+</html>
