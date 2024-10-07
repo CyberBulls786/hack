@@ -1,73 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        body {
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us</title>
+        <style>
+          nav {
+            display: flex;
+            align-items: center;
+            background-color: #3473d1;
+            padding: 20px;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+          }
+
+          .logo img {
+            height: 100px;
+          }
+
+          nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1.5rem;
+          }
+
+          nav ul li {
+            flex: 1;
+          }
+
+          nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            font-size: 25px;
+          }
+          body {
+            background-color: #f8f9fa;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
             height: 100vh;
-        }
-        .container {
+          }
+          .container {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 350px;
-          gap: 50px;
-        }
-        .form-container {
+            padding: 50px;
+            gap:1rem;
+          }
+          .form-container {
             flex: 1;
             max-width: 400px;
             margin: 20px;
-            padding: 20px;
+            padding: 70px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .form-container h2 {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+           margin-left: 240px;
+           display: ;
+           align-items: center;
+          }
+          .form-container h2 {
             text-align: center;
-        }
-        .form-container label {
+            font-size: 40px;
+            padding-bottom: 10px;
+    
+          }
+          .form-container label {
             display: block;
             margin-bottom: 5px;
-        }
-        .form-container input, 
-        .form-container textarea {
+          }
+          .form-container input,
+          .form-container textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
-        }
-        .form-container button {
-            width: 100%;
+          }
+          .form-container button {
+            width: 105%;
             padding: 10px;
             background-color: #3473d1;
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-        }
-        .form-container button:hover {
+
+          }
+          .form-container button:hover {
             background-color: #3473d1;
-        }
-        .image-container {
+          }
+          .image-container {
             flex: 1;
             display: flex;
             justify-content: center;
@@ -76,45 +115,72 @@
             padding: 20px;
             border-radius: 5px;
             height: 200;
-        }
-        .image-container img {
+          }
+          .image-container img {
             max-width: 100%;
             height: auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="form-container">
-            <h2>Contact Us</h2>
-            <form>
+          }
+          .contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        </style>
+      </head>
+      <body>
+        <nav>
+          <div class="logo">
+            <a href="#home"
+              ><img
+                src="https://firebasestorage.googleapis.com/v0/b/hack-aaf68.appspot.com/o/Web_Photo_Editor-removebg-preview.png?alt=media&token=a8aa1779-2c2c-4cc7-86b4-736745cff310"
+                alt="Logo"
+            /></a>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <section class="contact">
+          <div class="container">
+            <div class="form-container">
+              <h2>Contact Us</h2>
+              <form action="https://formspree.io/f/mjkvbelw" method="post">
                 <label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname" required>
-                
+                <input type="text" id="firstname" name="firstname" required />
+
                 <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" required>
-                
+                <input type="text" id="lastname" name="lastname" required />
+
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
+                <input type="email" id="email" name="email" required />
+
                 <label for="contactno">Contact Number</label>
-                <input type="tel" id="contactno" name="contactno" required>
-                
+                <input type="tel" id="contactno" name="contactno" required />
+
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+
                 <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="image-container">
-            <img src="https://firebasestorage.googleapis.com/v0/b/hack-aaf68.appspot.com/o/Contact%20us-amico%20(1).png?alt=media&token=fa2f768c-f947-4b25-8b91-b31ad1f4b72c"  alt="Contact Us Image" width=500px>
-           
-        </div>
-    </div>
-</body>
-</html>
-
-     
-</body>
-
+              </form>
+            </div>
+            <div class="image-container">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/hack-aaf68.appspot.com/o/Contact_us-amico__1_-removebg-preview.png?alt=media&token=026ccbf8-18b0-4c40-ae22-978c60ea721a"
+                width="600px"
+              />
+            </div>
+          </div>
+        </section>
+      </body>
+    </html>
+  </body>
 </html>
