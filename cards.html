@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cards.css">
+    <title>Card Layout</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #3473d1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1em;
+    color: #000000;
+}
+#BLG{
+text-align: center;
+}
+    </style>
+</head>
+<body>
+    <h1 id="BLG" > BLOGS</h1>
+    <div class="container">
+        <div class="card">
+            <img src="Web_Photo_Editor-removebg-preview.png" alt="Image 1">
+            <h2>Card Title 1</h2>
+            <p>This is a description for card 1.</p>
+        </div>
+        <div class="card">
+            <img src="Web_Photo_Editor-removebg-preview.png" alt="Image 2">
+            <h2>Card Title 2</h2>
+            <p>This is a description for card 2.</p>
+        </div>
+        <div class="card">
+            <img src="Web_Photo_Editor-removebg-preview.png" alt="Image 3">
+            <h2>Card Title 3</h2>
+            <p>This is a description for card 3.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
